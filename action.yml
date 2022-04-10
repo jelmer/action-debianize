@@ -10,6 +10,17 @@ inputs:
       Identity to use for commits
     required: false
     default: 'debianize <noreply@github.com>'
+  directory:
+    description: >
+      Set debianize --directory option.
+
+      Directory to run in
+    required: false
+  recursive:
+    description: >
+      Recursively package dependencies.
+    required: false
+    default: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
