@@ -9,4 +9,18 @@ using debianize and sbuild.
 
 Identity to use for commits.
 
-Defaults to "debianize <noreply@github.com>".
+Defaults to ``debianize <noreply@github.com>``.
+
+### `directory`
+
+Subpath to run debianize in.
+
+Useful if the source that needs to be packaged is in a subdirectory.
+
+Defaults to ``.``
+
+### `recursive`
+
+Recursively package new dependencies or update existing dependencies.
+
+Defaults to ``true``
