@@ -1,0 +1,6 @@
+name: "debianize"
+description: >
+  Genrate and build a Debian package.
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
