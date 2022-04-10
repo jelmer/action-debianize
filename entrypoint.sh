@@ -33,4 +33,6 @@ mkdir "${HOME}/.config/"
 # Set user information
 brz whoami "${IDENTITY}"
 
+export DEBEMAIL="${IDENTITY}"
+
 debianize "${debianize_args[@]}"
