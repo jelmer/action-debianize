@@ -1,6 +1,14 @@
 name: "debianize"
 description: >
   Genrate and build a Debian package.
+inputs:
+  identity:
+    description: >
+      Identity to use for commits
+    required: false
+    default: 'debianize <noreply@github.com>'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.identity }}
