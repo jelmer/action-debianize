@@ -26,3 +26,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.identity }}
+    - ${{ inputs.directory }}
+    - ${{ inputs.recursive }}

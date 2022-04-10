@@ -6,6 +6,7 @@ set -x
 
 IDENTITY="${1}"
 DEBIANIZE_DIRECTORY="${2}"
+DEBIANIZE_RECURSIVE="${3}"
 
 # Default lintian-brush arguments
 debianize_args=(
