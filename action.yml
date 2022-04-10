@@ -1,4 +1,7 @@
 name: "debianize"
+branding:
+  color: red
+  icon: package
 description: >
   Genrate and build a Debian package.
 inputs:
