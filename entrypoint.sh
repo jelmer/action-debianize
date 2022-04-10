@@ -7,6 +7,7 @@ set -x
 IDENTITY="${1}"
 DEBIANIZE_DIRECTORY="${2}"
 DEBIANIZE_RECURSIVE="${3}"
+DEBIANIZE_VERSION_KIND="${4}"
 
 # Default lintian-brush arguments
 debianize_args=(
@@ -21,6 +22,9 @@ if [ -n "${DEBIANIZE_DIRECTORY}" ]; then
 fi
 if [ "${DEBIANIZE_RECURSIVE}" == "true" ]; then
     debianize_args+=("--recursive")
+fi
+if [ -n "${DEBIANIZE_VERSION_KIND}" ]; then
+    debianize_args+=("--upstream-version-kind=${DEBIANIZE_VERSION_KIND}")
 fi
 
 # Create .config directory, required by breezy

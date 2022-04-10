@@ -21,6 +21,11 @@ inputs:
       Recursively package dependencies.
     required: false
     default: true
+  version-kind:
+    description: >
+      What kind of version to package; one of "auto", "release", "snapshot"
+    required: false
+    default: auto
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -28,3 +33,4 @@ runs:
     - ${{ inputs.identity }}
     - ${{ inputs.directory }}
     - ${{ inputs.recursive }}
+    - ${{ inputs.version-kind }}

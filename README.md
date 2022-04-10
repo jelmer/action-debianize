@@ -24,3 +24,11 @@ Defaults to ``.``
 Recursively package new dependencies or update existing dependencies.
 
 Defaults to ``true``
+
+### `version-kind`
+
+Kind of version to package. One of:
+
+ * ``auto``: Automatically determine appropriate version kind (default)
+ * ``release``: Package the latest release
+ * ``snapshot``: Package a VCS snapshot
