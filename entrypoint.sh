@@ -13,7 +13,7 @@ DEBIANIZE_VERSION_KIND="${4}"
 debianize_args=(
     "--verbose"
     "--iterate-fix"
-    "--schroot unstable-amd64-sbuild"
+    "--schroot=unstable-amd64-sbuild"
 )
 
 # Parse options
